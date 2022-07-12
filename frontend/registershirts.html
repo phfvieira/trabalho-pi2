@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <title>Cadastrar Camisas</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+  <script src="Js/script.js"></script>
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper_form">
+
+      <form class="form_shirts" id="form_shirts" enctype="multipart/form-data">
+
+          <h1 class="form_title">SportShirts Cadastro de Camisas</h1>
+          <span class="subtitle">Nome:</span> <input class="input_config" name="name" type="text"><br>
+          <span class="subtitle">Valor:</span> <input class="input_config" name="value" type="number" step=".01"><br>
+          <span class="subtitle">Descrição:</span> <input class="input_config" name="description" type="text"><br>
+          <span class="subtitle">Clube:</span> <input class="input_config" name="team" type="text"> <br>
+          <span class="subtitle">Composição:</span> <input class="input_config" name="composition" type="text"><br><br>
+          <span class="subtitle">Imagem</span> <input name="arquivo" type="file"><br>
+          <input class = "btn_sub" type="submit" value="Cadastrar">
+ 
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
