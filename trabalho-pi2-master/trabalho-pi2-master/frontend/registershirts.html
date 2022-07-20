@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <title>Cadastrar Camisas</title>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+
+  <script src="Js/script.js"></script>
+  <script src="Js/registershirt.js"></script>
+  <link rel="shortcut icon" href="imagem/android-chrome-512x512.png" type="image/x-icon" />
+  
+</head>
+
+<body>
+  <div class="container">
+    <div class="wrapper_form">
+
+      <div id="shirt">
+        
+      </div>
+
+      <form class="form_shirts" id="form_shirts" enctype="multipart/form-data">
+
+          <h1 class="form_title">SportShirts Cadastro de Camisas</h1>
+          <span class="subtitle">Nome:</span> <input class="input_config" id="input_name" name="name" type="text"><br>
+          <div class="empty_file" id="empty_file_name"><p>Campo obrigatório!</p></div>
+
+          <span class="subtitle">Valor:</span> <input class="input_config" id="input_price" name="price" type="number" step=".01"><br>
+          <div class="empty_file" id="empty_file_price"><p>Campo obrigatório!</p></div>
+
+          <span class="subtitle">Descrição:</span> <input class="input_config" id="input_description" name="description" type="text"><br>
+          <div class="empty_file" id="empty_file_description"><p>Campo obrigatório!</p></div>
+
+          <span class="subtitle">Clube:</span> <input class="input_config" id="input_team" name="team" type="text"> <br>
+          <div class="empty_file" id="empty_file_team"><p>Campo obrigatório!</p></div>
+
+          <span class="subtitle">Composição:</span> <input class="input_config" id="input_composition" name="composition" type="text"><br><br>
+          <div class="empty_file" id="empty_file_composition"><p>Campo obrigatório!</p></div>
+
+          <span class="subtitle">Imagem</span> <input id="input_img" name="file" type="file" required><br>
+          <input id = "btn_sub"class = "btn_sub" type="submit" value="Cadastrar">
+ 
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>

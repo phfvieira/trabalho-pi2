@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery.mask/1.14.0/jquery.mask.js"></script>
+  <script type="text/javascript" src="Js/script.js"></script>
+  <script type="text/javascript" src="Js/registeruser.js"></script>
+  <link rel="shortcut icon" href="imagem/android-chrome-512x512.png" type="image/x-icon" />
+  <title>Login</title>
+</head>
+
+<body class="body_login">
+  <div class="container">
+    <header>
+      <div class="header_top">
+        <div class="logo"><img src="imagem/logo.png" alt="logo" /></div>
+      </div>
+      <nav class="header_bot">
+        <ul class="pick_box">
+          <li class="list" id="start">
+            <a class="list_a" href="main.html">Início</a>
+          </li>
+          <li class="list" id="team">
+            <a class="list_a" href="shirts.html">Camisas</a>
+          </li>
+          <li class="list" id="nation">
+            <a class="list_a" href="nation.html">Seleções</a>
+          </li>
+          <li class="list" id="soccer">
+            <a class="list_a" href="soccer.html">Futebol</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="line"></div>
+    </header>
+    <h1 id="title_user">Cadastrar Usuário</h1>
+
+    <div class="wrapper_form_user">
+      <div id="content">
+        <form class="form_user" id="form_user" enctype="multipart/form-data">
+          <input class="input_config_user" id="email" type="text"  name="email" placeholder="*Email"><br>
+          <input class="input_config_user" id="name" type="text" name="name" placeholder="*Nome"><br>
+          <input class="input_config_user" id="cpf" type="text" name="cpf" placeholder="*CPF"><br>
+          <div class="check_user" id="check_cpf"><p></p></div>
+          <div class="radio_user" > 
+            <input class="checkbox_user" type="radio" name="sex" id="sex_masc" value="M">
+            <p>Masculino</p>
+            <input class="checkbox_user" type="radio" name="sex" id="sex_fame" value="F">
+            <p>Feminino</p>
+          </div>
+          <input class="input_config_user" id="password" name = "password" type="password" placeholder="Senha*"> <br>
+          <input class="input_config_user" id="confirm_password" name = "confirm_password" type="password" placeholder="Digite Novamente a Senha*">
+          <div class="check_user" id="check_password"><p></p></div>
+          <br>
+          <input class="btn_sub_user" type="submit" value="Criar Conta">
+
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</body>
