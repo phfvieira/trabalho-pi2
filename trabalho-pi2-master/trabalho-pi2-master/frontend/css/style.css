@@ -255,6 +255,13 @@ li+li {
   min-height: 100%;
   border-bottom: 1px solid rgb(6, 1, 77);
 }
+.line_thin {
+  height: 1spx;
+  background-color: black;
+  min-width: 100%;
+  min-height: 100%;
+  border-bottom: 1px solid black;
+}
 
 .banner-card img {
   border-top-right-radius: 10px;
@@ -335,19 +342,14 @@ li+li {
   min-height: 230px;
 }
 
-.name_shirt {
-  padding-left: 10px;
-  text-align: start;
-  color: #747474;
-  margin-bottom: 8px;
-  font-family: Arial, Helvetica, sans-serif;
-}
+
 
 .shirt {
   margin-top: 20px;
   max-width: 250px;
   max-height: 330px;
   border: 1px solid #cccc;
+  cursor: pointer;
 }
 
 .value_shirt {
@@ -473,7 +475,30 @@ li+li {
   margin-bottom: 40px;
   text-align: center;
 }
-
+.wrapper_product{
+  margin-top: 40px;
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.wrapper_product .name_shirt{
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4d4d4d;;
+  line-height: 1.75rem;
+  font-size: 24px;
+  font-weight: 700;
+  max-width: 40%;
+  margin-bottom: 8px;
+}
+.name_shirt{
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #4d4d4d;;
+  font-size: 16px;
+  padding-left: 10px;
+  margin-bottom: 5px;
+}
 .btn_sub {
   margin-top: 20px;
   background-color: Red;
@@ -524,7 +549,65 @@ li+li {
   margin-bottom: 40px;
   margin-left: 10%;
 }
-
+.shirt_picture{
+  padding-left: 4%;
+  padding-right: 4%;
+}
+.shirt_attributes{
+  max-width: 50%;
+  text-align: start;
+  margin-top: 3%;
+}
+.shirt_price span{
+  
+  padding-top: 30px;
+  text-align: start;
+  font-family: Arial, Helvetica, sans-serif;
+  color: black;
+}
+.shirt_price{
+  margin-top: 4%;
+}
+.shirt_price p{
+  font-size: x-large;
+  margin-top: 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  color:orange;
+}
+#buy{
+  margin-top: 10%;
+  font-family: Arial, Helvetica, sans-serif;
+  color: orange;
+  background-color: black;
+  width: 30%;
+  height: 10%;
+  border-radius:5%;
+}
+.shirt_picture img{
+  max-width: 444;
+  max-height: 444;
+  width: 444px;
+  height: 444px;
+  -webkit-transition: -webkit-transform .5s ease;
+  transition: transform .5s ease;
+  cursor: zoom-in;
+}
+.txt_info{
+  padding-left: 3%;
+  text-align: start;
+  margin-top: 2%;
+  font-family: Arial, Helvetica, sans-serif;
+ 
+}
+.txt_info h3{ 
+  font-size: medium;
+  font-weight:600;
+  color: #4d4d4d;
+}
+.txt_info p{
+  color: #4d4d4d;
+  margin-top: 20px;
+}
 .form_login .subtitle {
   margin-left: 10%;
 }

@@ -35,5 +35,4 @@ shirtsRouter.post('/', upload.single('file'), async (req, res) => {
   });
   return res.status(201).json(shirt);
 });
-
 export default shirtsRouter;

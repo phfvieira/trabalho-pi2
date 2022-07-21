@@ -54,6 +54,7 @@ $(function () {
     window.location.href = `http://127.0.0.1:5500/trabalho-pi2-master/frontend/shirts.html?query=${query.trim()}`;
   });
 });
+
 $(function () {
   $('#btn_register').click(function () {
     const query = $('#input_email').val();
@@ -91,4 +92,4 @@ $(function () {
     }
   });
 });
-
+                                    

@@ -20,7 +20,7 @@ function fetchData(inputValue = '') {
 
     response.forEach(shirt => {
       html += `
-       <div class="shirt">
+       <div class="shirt" data-id="${shirt.id}">
          <img src="${shirt.url}" alt="" />
          <p class="name_shirt">
            ${shirt.name}
@@ -32,6 +32,14 @@ function fetchData(inputValue = '') {
     `
     })
     $('#shirts_list').append(html);
+    $('.shirt').click(function () {
+      const id = $(this).data("id");
+      console.log(id);
+      if (!id) {
+        return;
+      }
+      window.location.href = `http://127.0.0.1:5500/trabalho-pi2-master/frontend/shirt.html?id=${id}`;
+    });
   })
 };
 
@@ -43,4 +51,8 @@ $(function () {
     const inputValue = $('#search_input').val();
     fetchData(inputValue);
   });
+});
+
+$(function(){
+  
 });
