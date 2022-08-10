@@ -13,16 +13,16 @@ class User extends Model {
       email: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true
+        unique: true,
       },
       name: {
         type: Sequelize.STRING,
-        allowNull : false,
+        allowNull: false,
       },
       cpf: {
         type: Sequelize.STRING,
         allowNull: false,
-        unique: true
+        unique: true,
       },
       sex: {
         type: Sequelize.STRING,
@@ -30,14 +30,14 @@ class User extends Model {
       },
       password: {
         type: Sequelize.STRING,
-        allowNull: false
-      }
+        allowNull: false,
+      },
     }, {
       sequelize,
       tableName: 'users',
       timestamps: false,
     });
-    this.addHook("beforeCreate",(user)=>{ 
+    this.addHook('beforeCreate', (user) => {
       user.password = bcrypt.hashSync(user.password, 8);
       return user;
     });

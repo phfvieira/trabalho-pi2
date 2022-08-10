@@ -24,26 +24,44 @@ $(function () {
       const cpf = data.get("cpf");
       if(cpf.length < 14){
         $("#check_cpf").html("Tamanho de CPF inválido!");
+        return;
       }
-      if (password !== confirmPassword) {
+      else if (password !== confirmPassword) {
         $("#check_password").html("Senhas devem ser iguais!");
+        return;
       }
-      if(password.length < 8){
+      else if(password.length < 8){
         $("#check_password").html("O campo Senha deve ter pelo menos 8 caracteres.");
+        return;
       }
-      $.ajax({
+      else {$.ajax({
         url: 'http://localhost:3333/users',
         data: JSON.stringify(Object.fromEntries(data)),
         cache: false,
         contentType: "application/json",
         processData: false,
         method: 'POST',
+
         success: function (data) {
+          console.log("docin")
           console.log(data);
-          
-              window.location.href = `http://127.0.0.1:5500/trabalho-pi2-master/frontend/register.html`;
-        }
-      });
+          window.location.href = `http://127.0.0.1:5500/trabalho-pi2-master/frontend/register.html`;
+        },
+
+        error: function (error){
+          $.toast({
+            heading: 'Error',
+            text: error.responseJSON.error,
+            showHideTransition: 'fade',
+            icon: 'error'
+        });
+        },
+      }).done(function (data) {
+        console.log("docin")
+        console.log(data);
+        window.location.href = `http://127.0.0.1:5500/trabalho-pi2-master/frontend/register.html`;
+      },);
+      }
     });
 
 });

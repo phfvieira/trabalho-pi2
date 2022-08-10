@@ -54,5 +54,13 @@ $(function(){
     $(this).css("-webkit-transform", "scale(1.0)");
     $(this).css("transform", "scale(1.0)");
   });
-
+  $(function () {
+    $('#search_button_main').click(function () {
+      const query = $('#search').val();
+      if (!query) {
+        return;
+      }
+      window.location.href = `http://127.0.0.1:5500/trabalho-pi2-master/frontend/shirts.html?query=${query.trim()}`;
+    });
+  });
 });
